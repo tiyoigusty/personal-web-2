@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gainsboro;
+}
+
+/* --------------- NAVBAR ----------------- */
+
+nav {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 50px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul h1 {
+  margin-right: 50px;
+  font-size: 30px;
+}
+nav ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav .button a {
+  text-decoration: none;
+  background-color: darkcyan;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 5px;
+  color: white;
+  box-shadow: 1px 1px 5px black;
+}
+
+/* ------------------ CONTENT SECTION ------------------------- */
+.container {
+  width: 900px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+  padding: 30px 40px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px;
+}
+.container .left-row {
+  width: 60%;
+}
+.container .left-row p {
+  text-align: justify;
+  margin: 20px 0;
+}
+.container .left-row .contact-cv {
+  display: flex;
+  align-items: center;
+}
+.container .left-row .contact-cv button {
+  width: 100px;
+  margin-right: 20px;
+  padding: 5px;
+  background: darkcyan;
+  border: 0.5px solid black;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.container .left-row .contact-cv .cv {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+.container .left-row .contact-cv a {
+  text-decoration: none;
+  color: black;
+}
+.container .left-row .contact-cv i {
+  margin-left: 5px;
+  font-size: 20px;
+}
+.container .left-row .sosmed {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  margin: 20px 0;
+}
+.container .left-row .sosmed a i {
+  color: white;
+  font-size: 20px;
+  background: darkcyan;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 26px;
+}
+.container .right-row {
+  width: 40%;
+}
+.container .right-row .card {
+  width: 275px;
+  margin: 0 auto;
+  box-shadow: 3px 3px 10px black;
+}
+.container .right-row .card .img img {
+  width: 100%;
+}
+.container .right-row .card .title {
+  padding: 10px;
+  text-align: center;
+}
+.container .right-row .card .title p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.container .right-row .card .title p span {
+  font-size: 10px;
+  font-weight: lighter;
+}
+
+/* ------------------ CONTACT SECTION ------------------------- */
+.contact-row {
+  width: 350px;
+  margin: 30px auto;
+}
+.contact-row h1 {
+  text-align: center;
+}
+.contact-row form {
+  margin-top: 20px;
+}
+.contact-row form div {
+  margin: 10px 0;
+}
+.contact-row input,
+.contact-row select,
+.contact-row textarea {
+  width: 100%;
+  border: none;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+.contact-row textarea {
+  resize: none;
+  height: 100px;
+}
+.contact-row button {
+  float: right;
+  background-color: darkcyan;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: white;
+  box-shadow: 1px 1px 5px black;
+  cursor: pointer;
+}
