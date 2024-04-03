@@ -26,28 +26,35 @@
         <form>
             <div>
                 <label for="name">Nama</label>
-                <input type="text" id="name">
+                <input type="text" id="name" required placeholder="Nama">
             </div>
             <div>
                 <label for="email">Email</label>
-                <input type="text" id="email">
+                <input type="text" id="email" required placeholder="Email">
             </div>
             <div>
                 <label for="phone">Phone Number</label>
-                <input type="text" id="phone">
+                <input type="text" id="phone" required placeholder="Phone Number">
             </div>
             <div>
                 <label for="subject">Subject</label>
-                <select name="subject" id="subject"></select>
+                <select name="subject" id="subject">
+                    <option value="">Select</option>
+                    <option value="FrontEnd">FrontEnd</option>
+                    <option value="BackEnd">BackEnd</option>
+                    <option value="FullStack">FullStack</option>
+                </select>
             </div>
             <div>
                 <label for="message">Message</label>
                 <textarea name="message" id="message"></textarea>
             </div>
             <div>
-                <button type="button">Submit</button>
+                <button type="button" onclick="submitEmail ()">Submit</button>
             </div>
         </form>
     </div>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
