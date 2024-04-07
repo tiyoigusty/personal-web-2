@@ -145,6 +145,9 @@ nav .button a {
 .contact-row form div {
   margin: 10px 0;
 }
+.contact-row form label{
+  font-weight: bold;
+}
 .contact-row input,
 .contact-row select,
 .contact-row textarea {
@@ -160,6 +163,128 @@ nav .button a {
 }
 .contact-row button {
   float: right;
+  background-color: darkcyan;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 20px;
+  color: white;
+  box-shadow: 1px 1px 5px black;
+  cursor: pointer;
+}
+
+/* ----------------- MY PROJECT -------------------- */
+.addProject-row {
+  width: 400px;
+  margin: 30px auto;
+}
+.addProject-row h1 {
+  text-align: center;
+}
+.addProject-row form {
+  margin-top: 20px;
+}
+.addProject-row form div {
+  margin: 10px 0;
+}
+.addProject-row form label{
+  font-weight: bold;
+}
+.addProject-row input,
+.addProject-row textarea {
+  width: 100%;
+  border: none;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+.addProject-row form .date{
+  display: flex;
+  justify-content: space-between;
+}
+.addProject-row form textarea{
+  resize: none;
+  height: 100px;
+}
+.addProject-row form .technology input{
+  width: auto;
+  margin-right: 5px;
+}
+.addProject-row form .technology .checkBox-row{
+  display: flex;
+  margin: -10px 0;
+}
+.addProject-row form .technology .checkBox-row div label{
+  font-weight: lighter;
+  /* margin-bottom: 5px; */
+  margin-right: 100px
+}
+.addProject-row form .uploadFile .uploadBox{
+  background-color: white;
+}
+.addProject-row form button {
+  float: right;
+  background-color: darkcyan;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 5px 20px;
+  color: white;
+  box-shadow: 1px 1px 5px black;
+  cursor: pointer;
+}
+
+/* MY PROJECT */
+.myProject {
+  background-color: whitesmoke;
+  margin: 100px auto;
+}
+.myProject-row h1{
+  text-align: center;
+  padding: 30px 0;
+}
+.listProject-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: first baseline;
+}
+.listProject-row .list-row{
+  background-color: white;
+  width: 300px;
+  margin: 20px 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px black;
+  padding: 10px;
+}
+.listProject-row .list-row img{
+  width: 100%;
+  border-radius: 10px;
+}
+.listProject-row .list-row a{
+  text-decoration: none;
+  color: black;
+}
+.listProject-row .list-row h4{
+  font-size: 20px;
+}
+.listProject-row .list-row h4 span{
+  font-size: 16px;
+  font-weight: lighter;
+  color: grey;
+}
+.listProject-row .list-row p{
+  margin: 15px 0;
+}
+.listProject-row .list-row .project-icon i{
+  font-size: 25px;
+}
+.listProject-row .list-row .button-project{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 5px;
+}
+.listProject-row .list-row .button-project button{
+  width: 130px;
   background-color: darkcyan;
   border: 1px solid black;
   border-radius: 10px;

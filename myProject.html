@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="navbar">
+        <h1>LOGO.</h1>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="myProject.html">My Projects</a></li>
+      </ul>
+
+      <div class="button">
+        <a href="contactForm.html">Contact Me</a>
+      </div>
+    </nav>
+
+    <section class="addProject">
+      <div class="addProject-row">
+        <h1>ADD MY PROJECT</h1>
+
+        <form>
+          <div>
+            <label for="projectName">Project Name</label>
+            <input type="text" name="projectName" id="projectName" />
+          </div>
+          <div class="date">
+            <div class="start">
+              <label for="start">Start Date</label>
+              <input type="date" name="start" id="start" />
+            </div>
+            <div class="end">
+              <label for="end">End Date</label>
+              <input type="date" name="end" id="end" />
+            </div>
+          </div>
+          <div>
+            <label for="description">Description</label>
+            <textarea name="description" id="description"></textarea>
+          </div>
+          <div class="technology">
+            <label>Technologies</label>
+            <div class="checkBox-row">
+              <div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="nodejs"
+                    class="checkbox"
+                    value="Node JS"
+                  />
+                  <label for="nodejs">Node JS</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="reactjs"
+                    class="checkbox"
+                    value="React JS"
+                  />
+                  <label for="reactjs">React JS</label>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="nextjs"
+                    class="checkbox"
+                    value="Next JS"
+                  />
+                  <label for="nextjs">Next JS</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="textscript"
+                    class="checkbox"
+                    value="TextScript"
+                  />
+                  <label for="textscript">TextScript</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="uploadFile">
+            <label for="uploadImg">Upload Image</label>
+            <input type="file" name="Image" id="uploadImg" class="uploadBox" />
+          </div>
+          <div>
+            <button type="input" onclick="addProject(event)">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <div class="myProject" id="myProject">
+      <h4>Tiyos Mobile App</h4>
+      <p>
+        Start : 08 April 2024 <br />
+        Selesai : 15 April 2024
+      </p>
+      <p> Duration : 7 hari</p>
+      <p>Technologies : React JS</p>
+      <img src="./assets/img/project-list.jpg" alt="gambar-project" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ea
+        doloribus quasi? Consectetur reiciendis illum sed. Corrupti porro quis
+        eum rem in nisi aperiam voluptatibus at veniam consequatur? Minus, cum?
+      </p>
+
+      <!-- <div class="myProject-row">
+        <h1>MY PROJECT</h1>
+
+        <div class="listProject-row">
+          <div class="list-row">
+            <img src="./assets/img/project-list.jpg" alt="project1" />
+
+            <a href="projectPage.html" target="_blank"
+              ><h4>
+                Tiyos Mobile Apps <br />
+                <span>Duration : 3 Month</span>
+              </h4></a
+            >
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              aperiam a incidunt nisi quo consequatur, earum eum non? Voluptate,
+              asperiores!
+            </p>
+
+            <div class="project-icon">
+              <i class="bx bxl-play-store"></i>
+              <i class="bx bxl-android"></i>
+              <i class="bx bxl-java"></i>
+            </div>
+
+            <div class="button-project">
+              <button>Edit</button>
+              <button>Delete</button>
+            </div>
+          </div>
+
+          <div class="list-row">
+            <img src="./assets/img/project-list.jpg" alt="project1" />
+
+            <h4>
+              Tiyos Mobile Apps <br />
+              <span>Duration : 3 Month</span>
+            </h4>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              aperiam a incidunt nisi quo consequatur, earum eum non? Voluptate,
+              asperiores!
+            </p>
+
+            <div class="project-icon">
+              <i class="bx bxl-play-store"></i>
+              <i class="bx bxl-android"></i>
+              <i class="bx bxl-java"></i>
+            </div>
+
+            <div class="button-project">
+              <button>Edit</button>
+              <button>Delete</button>
+            </div>
+          </div>
+
+          <div class="list-row">
+            <img src="./assets/img/project-list.jpg" alt="project1" />
+
+            <h4>
+              Tiyos Mobile Apps <br />
+              <span>Duration : 3 Month</span>
+            </h4>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              aperiam a incidunt nisi quo consequatur, earum eum non? Voluptate,
+              asperiores!
+            </p>
+
+            <div class="project-icon">
+              <i class="bx bxl-play-store"></i>
+              <i class="bx bxl-android"></i>
+              <i class="bx bxl-java"></i>
+            </div>
+
+            <div class="button-project">
+              <button>Edit</button>
+              <button>Delete</button>
+            </div>
+          </div>
+
+          <div class="list-row">
+            <img src="./assets/img/project-list.jpg" alt="project1" />
+
+            <h4>
+              Tiyos Mobile Apps <br />
+              <span>Duration : 3 Month</span>
+            </h4>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              aperiam a incidunt nisi quo consequatur, earum eum non? Voluptate,
+              asperiores!
+            </p>
+
+            <div class="project-icon">
+              <i class="bx bxl-play-store"></i>
+              <i class="bx bxl-android"></i>
+              <i class="bx bxl-java"></i>
+            </div>
+
+            <div class="button-project">
+              <button>Edit</button>
+              <button>Delete</button>
+            </div>
+          </div>
+
+          <div class="list-row">
+            <img src="./assets/img/project-list.jpg" alt="project1" />
+
+            <h4>
+              Tiyos Mobile Apps <br />
+              <span>Duration : 3 Month</span>
+            </h4>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              aperiam a incidunt nisi quo consequatur, earum eum non? Voluptate,
+              asperiores!
+            </p>
+
+            <div class="project-icon">
+              <i class="bx bxl-play-store"></i>
+              <i class="bx bxl-android"></i>
+              <i class="bx bxl-java"></i>
+            </div>
+
+            <div class="button-project">
+              <button>Edit</button>
+              <button>Delete</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>-->
+    </div>
+
+    <script src="./assets/js/addProject.js"></script>
+  </body>
+</html>

@@ -1,3 +1,5 @@
+// --------------- CONTACT ME ---------------------
+
 // membuat function
 function submitEmail() {
   // memanggil element
@@ -30,7 +32,7 @@ function submitEmail() {
   const myEmail = "tiyooigustyy@gmail.com";
 
   let a = document.createElement("a");
-  a.href = `https://mail.google.com/mail?view=cm&fs=1&to=${myEmail}&su=${subject}&body=${message}`;
+  a.href = `https://mail.google.com/mail?view=cm&fs=1&form=&to=${myEmail}&su=${subject}&body=${message}`;
   a.click();
 
   console.log(data);
