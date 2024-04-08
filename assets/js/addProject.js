@@ -10,7 +10,6 @@ function addProject(event) {
   let tech = document.querySelectorAll("input:checked");
   // let image = document.getElementById("uploadImg").value;
   let image = document.getElementById("uploadImg").files[0];
-  let imageURL = URL.createObjectURL(image);
 
   if (project === "") {
     return alert("Please entered your Project Name!");
@@ -22,9 +21,11 @@ function addProject(event) {
     return alert("Please entered your Description!");
   } else if (tech.length === 0) {
     return alert("Please choose your Technologies!");
-  } else if (imageURL === "") {
+  } else if (!image) {
     return alert("Please entered your Image!");
   }
+
+  let imageURL = URL.createObjectURL(image);
 
   var listTech = [];
 
@@ -87,19 +88,18 @@ function newProject() {
     const projectPlus = dataProject[i];
 
     document.getElementById("myProject").innerHTML += `
-    <div class="myProject" id="myProject">
-      <h4>${projectPlus.project}</h4>
-      <p>
-        Start : ${projectPlus.start} <br />
-        Selesai : ${projectPlus.end}
-      </p>
-      <p> Duration : ${projectPlus.duration}</p>
-      <p>Technologies : ${projectPlus.technologies}</p>
-      <img src="${projectPlus.image}" alt="gambar-project" />
-      <p>
-      <p>${projectPlus.description}</p>
-      </p>
+    <div id="myProject">
+      <h1>MY PROJECT</h1>
+      <div class="row">
+        <img src="${projectPlus.image}" alt="project" />
+        <h3>T${projectPlus.project}</h3>
+        <p>Start : ${projectPlus.start}</p>
+        <p>End : ${projectPlus.end}</p>
+        <p>Duration : ${projectPlus.duration}</p>
+        <p>Technologies : ${projectPlus.technologies}</p>
+        <p>${projectPlus.description}</p>
+      </div>
     </div>
-  `;
+    `;
   }
 }
