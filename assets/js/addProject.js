@@ -82,22 +82,28 @@ function addProject(event) {
 }
 
 function newProject() {
-  document.getElementById("myProject").innerHTML = "";
+  document.getElementById("row").innerHTML = "";
 
   for (let i = 0; i < dataProject.length; i++) {
     const projectPlus = dataProject[i];
 
-    document.getElementById("myProject").innerHTML += `
-    <div id="myProject">
-      <h1>MY PROJECT</h1>
-      <div class="row">
+    document.getElementById("row").innerHTML += `
+    <div class="row" id="row">
+      <div class="list">
         <img src="${projectPlus.image}" alt="project" />
-        <h3>T${projectPlus.project}</h3>
-        <p>Start : ${projectPlus.start}</p>
-        <p>End : ${projectPlus.end}</p>
-        <p>Duration : ${projectPlus.duration}</p>
-        <p>Technologies : ${projectPlus.technologies}</p>
-        <p>${projectPlus.description}</p>
+        <a href="projectPage.html"><h3 class="projectName">${projectPlus.project}</h3></a>
+        <p class="date">Start : ${projectPlus.start} | End : ${projectPlus.end}<br> Duration : ${projectPlus.duration}</p>
+        <p class="desc">${projectPlus.description}</p>
+        <p class="icons">
+          <i class='bx bxl-play-store'></i>
+          <i class='bx bxl-android'></i>
+          <i class='bx bxl-java'></i>
+        </p>
+
+        <div class="btn">
+          <button type="button">Edit</button>
+          <button type="button">Delete</button>
+        </div>
       </div>
     </div>
     `;
