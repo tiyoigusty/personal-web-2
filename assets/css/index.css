@@ -33,6 +33,12 @@
   nav ul li a {
     text-decoration: none;
     color: black;
+    padding-bottom: 3px;
+    /* transition: all .5s ease-in-out; */
+  }
+  nav ul li a:hover{
+    color: darkcyan;
+    border-bottom: .5px solid darkcyan;
   }
   nav .button a {
     text-decoration: none;
@@ -43,6 +49,10 @@
     padding: 5px;
     color: white;
     box-shadow: 1px 1px 5px black;
+  }
+  nav .button:hover a{
+    padding: 6px;
+    font-size: 19px;
   }
   nav .btn-menu {
     font-size: 25px;

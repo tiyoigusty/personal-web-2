@@ -66,7 +66,7 @@ function addProject(event) {
     duration = `${differenceInDays} days`;
   }
 
-  dataProject.push({
+  dataProject.unshift({
     project: project,
     start: start,
     end: end,
